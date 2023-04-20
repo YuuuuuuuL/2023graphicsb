@@ -6,10 +6,10 @@
 	<GL/glut.h>
 	"glm.h"
 
-1680764211 c:\users\administrator\desktop\freeglut\include\gl\glut.h
+1426320928 c:\users\administrator\desktop\freeglut\include\gl\glut.h
 	"freeglut_std.h"
 
-1680764211 c:\users\administrator\desktop\freeglut\include\gl\freeglut_std.h
+1426320928 c:\users\administrator\desktop\freeglut\include\gl\freeglut_std.h
 	<windows.h>
 	<EGL/egl.h>
 	<GLES/gl.h>
@@ -29,5 +29,23 @@
 	<stdlib.h>
 	<string.h>
 	<assert.h>
+	"glm.h"
+
+1681972101 source:c:\users\administrator\desktop\2023graphicsb\week08-2\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1681972101 c:\users\administrator\desktop\2023graphicsb\week08-2\glm.h
+	<GL/glut.h>
+
+1681972101 source:c:\users\administrator\desktop\2023graphicsb\week08-2\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
 	"glm.h"
 
