@@ -10,6 +10,7 @@ GLMmodel * warmR = NULL;
 
 int show[4] = {1, 1, 1, 1};
 int ID = 2;
+float angle;
 float teapotX = 0, teapotY = 0;
 FILE * fout = NULL;
 FILE * fin = NULL;
@@ -34,7 +35,7 @@ void display()
     glPushMatrix();
         glScalef(0.3, 0.3, 0.3);
         glPushMatrix();
-            glTranslatef(teapotX, teapotY, 0);
+            ///glTranslatef(teapotX, teapotY, 0);
 
             if(ID == 0) glColor3f(1, 0, 0);
             else glColor3f(1, 1, 1);
@@ -43,16 +44,36 @@ void display()
         if(ID == 1) glColor3f(1, 0, 0);
             else glColor3f(1, 1, 1);
             if(show[1])glmDraw(body, GLM_MATERIAL);
+
+        glPushMatrix();
+                glTranslatef(-1.360000, +0.360000, 0);
+                glRotatef(angle, 0, 0, 1);
+                glTranslatef(1.360000, -0.360000, 0);
+
         if(ID == 2) glColor3f(1, 0, 0);
             else glColor3f(1, 1, 1);
             if(show[2])glmDraw(uparmR, GLM_MATERIAL);
+
+        glPushMatrix();
+                glTranslatef(-1.959999, +0.80000, 0);
+                glRotatef(angle, 0, 0, 1);
+                glTranslatef(1.959999, -0.080000, 0);
+
         if(ID == 3) glColor3f(1, 0, 0);
             else glColor3f(1, 1, 1);
             if(show[3])glmDraw(lowarmR, GLM_MATERIAL);
+
+
         if(ID == 4) glColor3f(1, 0, 0);
             else glColor3f(1, 1, 1);
             if(show[4])glmDraw(warmR, GLM_MATERIAL);
+        glPopMatrix();
     glPopMatrix();
+
+
+    glPopMatrix();
+    glColor3f(0, 1, 0);
+    glutSolidTeapot(0.02);
     glutSwapBuffers();
 }
 int oldX=0, oldY=0;
@@ -66,6 +87,8 @@ void mouse(int button, int state, int x, int y)
 void motion(int x, int y){
     teapotX += (x-oldX)/150.0;
     teapotY -= (y-oldY)/150.0;
+    printf("glTranslatef(%f, %f, 0);\n", teapotX, teapotY);
+        angle += x-oldX;
         oldX = x;
         oldY = y;
         glutPostRedisplay();
