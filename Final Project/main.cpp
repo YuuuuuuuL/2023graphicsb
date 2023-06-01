@@ -30,8 +30,9 @@ void display()
         head = glmReadOBJ("model/head.obj");
         body = glmReadOBJ("model/body.obj");
         uparmR = glmReadOBJ("model/rhandup.obj");
-        lowarmR = glmReadOBJ("model/rhanddown.obj");
         warmR = glmReadOBJ("model/rhand.obj");
+        lowarmR = glmReadOBJ("model/rhanddown.obj");
+
     }
     glPushMatrix();
         glScalef(0.3, 0.3, 0.3);
@@ -56,18 +57,18 @@ void display()
             if(show[2])glmDraw(uparmR, GLM_MATERIAL);
 
         glPushMatrix();
-                glTranslatef(-1.959999, +0.80000, 0);
+                glTranslatef(-1.360000, +0.500000, 0);
                 glRotatef(angle[3], 0, 0, 1);
-                glTranslatef(1.959999, -0.080000, 0);
+                glTranslatef(0.120000, -0.720000, 0);
 
         if(ID == 3) glColor3f(1, 0, 0);
             else glColor3f(1, 1, 1);
-            if(show[3])glmDraw(lowarmR, GLM_MATERIAL);
+            if(show[3])glmDraw(warmR, GLM_MATERIAL);
 
 
         if(ID == 4) glColor3f(1, 0, 0);
             else glColor3f(1, 1, 1);
-            if(show[4])glmDraw(warmR, GLM_MATERIAL);
+            if(show[4])glmDraw(lowarmR, GLM_MATERIAL);
 
 
         glPopMatrix();
