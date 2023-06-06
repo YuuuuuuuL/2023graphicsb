@@ -2,13 +2,13 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="week08-2" />
+		<Option title="week16" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/week08-2" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="../Final Project/freeglut" />
+				<Option output="bin/Debug/week16" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../week16" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -17,8 +17,8 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/week08-2" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="C:/Users/Administrator/Desktop/freeglut/bin" />
+				<Option output="bin/Release/week16" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Users/88696/Desktop/2023graphicsb/Final Project/freeglut/bin" />
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
@@ -32,7 +32,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="C:/Users/Administrator/Desktop/freeglut/include" />
+			<Add directory="C:/Users/88696/Desktop/2023graphicsb/Final Project/freeglut/include" />
 		</Compiler>
 		<Linker>
 			<Add library="glut32" />
@@ -40,10 +40,9 @@
 			<Add library="glu32" />
 			<Add library="winmm" />
 			<Add library="gdi32" />
-			<Add directory="C:/Users/Administrator/Desktop/freeglut/lib" />
+			<Add directory="C:/Users/88696/Desktop/2023graphicsb/Final Project/freeglut/lib" />
 		</Linker>
 		<Unit filename="glm.cpp" />
-		<Unit filename="glm.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

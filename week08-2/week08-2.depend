@@ -49,3 +49,21 @@
 	<GL/glut.h>
 	"glm.h"
 
+1685611363 source:c:\users\88696\desktop\2023graphicsb\week08-2\glm.cpp
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	"glm.h"
+
+1685611363 c:\users\88696\desktop\2023graphicsb\week08-2\glm.h
+	<GL/glut.h>
+
+1685611363 source:c:\users\88696\desktop\2023graphicsb\week08-2\main.cpp
+	<opencv/highgui.h>
+	<opencv/cv.h>
+	<GL/glut.h>
+	<GL/glut.h>
+	"glm.h"
+

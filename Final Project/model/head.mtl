@@ -1,6 +1,15 @@
-newmtl initialShadingGroup
+newmtl clay_texture1:blinn1SG
 illum 4
-Kd 0.50 0.50 0.50
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd diffuse.jpg
+Ni 1.00
+Ks 0.32 0.32 0.32
+newmtl clay_texture2:blinn1SG
+illum 4
+Kd 0.58 0.37 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
+Ks 0.48 0.48 0.48
